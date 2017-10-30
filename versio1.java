@@ -11,7 +11,9 @@ class Versio1 {
 		int a = 1;
 		int kolmikoita = 0;
 		List<int[]> kolmikot = new ArrayList((int)3e6);
-		while (System.currentTimeMillis()-t1 < m*60*1e3) {
+		while (System.currentTimeMillis()-t1 < m*60*1e3
+					&& 2*a*a <= Double.MAX_VALUE )
+		{
 			for (int b = 1; b <= a; b++) {
 				int s = a*a+b*b;
 				int c = (int)Math.sqrt(s);
